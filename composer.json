@@ -1,6 +1,6 @@
 {
-    "name": "viosys/language-change-default",
-    "version": "1.0.0",
+    "name": "ddraxb/language-change-default",
+    "version": "1.0.2",
     "description": "shopware 6 plugin to change the default language",
     "type": "shopware-platform-plugin",
     "license": "MIT",
