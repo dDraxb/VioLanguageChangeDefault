@@ -27,15 +27,15 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Throwable;
 use function array_key_exists;
 use function count;
 use function strlen;
 
+#[AsCommand(name: 'vio:language:change-default')]
 class LanguageChangeDefaultCommand extends Command
 {
-    protected static $defaultName = 'vio:language:change-default';
-
     private EntityRepository $localeRepository;
 
     private EntityRepository $languageRepository;
